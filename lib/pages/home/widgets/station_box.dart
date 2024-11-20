@@ -33,7 +33,7 @@ class StationBox extends StatelessWidget {
                   ),
                 );
                 if (result != null) {
-                  onStationSelected(result, endStation ?? '');
+                  onStationSelected(result, startStation ?? '');
                 }
               },
               child: Column(
@@ -75,7 +75,7 @@ class StationBox extends StatelessWidget {
                   ),
                 );
                 if (result != null) {
-                  onStationSelected(startStation ?? '', result);
+                  onStationSelected(endStation ?? '', result);
                 }
               },
               child: Column(
